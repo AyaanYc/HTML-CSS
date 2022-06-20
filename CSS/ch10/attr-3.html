@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[class ~= button] {color: red;}
+        a[class =flat] {color: rgb(22, 228, 56);}
+        /*  실시간으로 바뀐 value값에는 반응x
+            attribute 에만 적용됨
+        */
+    </style>
+</head>
+<body>
+    <li><a href="#" class="flat">메뉴 1</a></li>
+    <li><a href="#" class="flat1">메뉴 2</a></li>
+    <li><a href="#" class="button">메뉴 3</a></li>
+    <li><a href="#" class="flat button">메뉴 4</a></li>
+</body>
+</html>

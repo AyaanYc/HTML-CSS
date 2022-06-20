@@ -1,0 +1,32 @@
+<!-- 
+    태그 선택자
+    클래스 선택자
+    아이디 선택자
+
+    선택자{속성1: 속성값1; 속성2: 속성값2;}
+    important적용시 제일 우선순위
+    선택이 디테일할수록 우선순위가 높아진다.
+    우선순위에따라 순서가 결정되고 같은 우선순위일때는 밑에있는게 적용
+    css주석은 */
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         div { font-weight: bold;}
+         .cls1 { color: blue; }
+         #id1 { background-color: antiquewhite;}
+         
+     </style>
+ </head>
+ <body>
+     <section >section</section>
+     <div>0000</div>
+     <div class="cls1">aaaa</div>
+     <div class="cls1" id="id1">bbba</div>
+ </body>
+ </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section p {color: blue;}
+        section > p {background-color: antiquewhite;}
+        /* 바로밑에 하나만주고싶을때 >사용 
+        상세한값 하나만 주고싶을때 >>>연결해서사용 */
+        h1 + p { color: rgb(255, 0, 0);}
+        /* + 는 인접해있어야만 먹히고 예)div+p
+            ~는 떨어져있어도 적용가능 예)div~p      
+        */
+    </style>
+</head>
+<body>
+    <section>
+    <h1>예양 방법 & 사용 요금</h1>
+    <p>아직 온라인 예약 신청이...</p>
+    <div>
+        <p>가족실(2~4인) : 60,000원</p>
+        <p>도미토리(4인 공용) : 25,000원/일</p>
+    </div>
+</section>
+</body>
+</html>

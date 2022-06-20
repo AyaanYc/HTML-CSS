@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 500px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #sec1:target, #sec2:target, #sec3:target {
+            width: 100px; background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#sec1">섹션1</a></li>
+        <li><a href="#sec2">섹션2</a></li>
+        <li><a href="#sec3">섹션3</a></li>
+        <div><h2>sec1</h2>
+            <img id="sec1" src="images/1.jpg" alt="">
+        </div>
+        <div><h2>sec2</h2>
+            <img id="sec2" src="images/2.jpg" alt="">
+        </div>
+        <div><h2>sec3</h2>
+            <img id="sec3" src="images/3.jpg" alt="">
+        </div>
+    </ul>
+</body>
+</html>

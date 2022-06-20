@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>my Form</h1>
+    <form action="/login">
+        입력 <input type="text" name="iuser" value="1" readonly />
+        <div>
+            <input type="text" name="uid" placeholder="user id" autofocus required />
+        </div>
+        <div>
+            <input type="password" name="upw" placeholder="user pasword" required />
+        </div>
+        <div>
+            <label>프사 : <input type="file" name="pic" accept="image/*" multiple /></label>
+        </div>
+        <div>
+            <label>남긴 말
+                <textarea name="cmt" cols="20" rows="10">value값은 여기적어라</textarea>
+            </label>
+        </div>
+        <div>
+            <!-- 양이 많고 1개만 선택할시 유용 select -->
+            <label>지역 : <select name="location">
+                    <option value="1">서울입니다.</option>
+                    <option value="2">대전입니다.</option>
+                    <option value="3" selected>대구입니다.</option>
+                    <option value="4">부산입니다.</option>
+                </select></label>
+        </div>
+        <!-- value값은 속성인상태면 꼭 포함되있어야 값이 서버에올라감 -->
+        <div>
+            취미 :
+            <label><input type="checkbox" name="hobbit" value="1">농구</label>
+            <label><input type="checkbox" name="hobbit" value="2">축구</label>
+            <label><input type="checkbox" name="hobbit" value="3" checked>배구</label>
+            <label><input type="checkbox" name="hobbit" value="4">탁구</label>
+        </div>
+        <div>
+            성별 :
+            <label>여성<input type="radio" name="gender" value="a" checked></label>
+            <label>남성<input type="radio" name="gender" value="b"></label>
+        </div>
+        <div>
+            <input type="submit" value="join" />
+            <input type="reset" value="reset" />
+        </div>
+    </form>
+</body>
+
+</html>

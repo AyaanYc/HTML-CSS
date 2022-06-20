@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex; width: 400px; 
+            background-color: brown;
+        }
+        .container div:nth-child(odd) { background-color: aquamarine;}
+        .container div:nth-child(even) { background-color: rgb(77, 8, 122);}
+        /* 
+        남는공간에서 비율별로 가져가는속성 flex-grow 0이면 필요한만큼만씀
+        남는공간에서 값이 늘어나면 늘어나는만큼 비율무시하고 늘어남
+        */
+        #box1{flex-grow: 3;}
+        #box2{ width: 100px;}
+        #box3{ flex-grow: 1;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+    </div>
+</body>
+</html>

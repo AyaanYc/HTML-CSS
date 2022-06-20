@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{ 
+            border: 1px solid #ccc;
+            width: 300px; height: 300px; margin: 20px;
+            background: url('images/bg4.jpg') no-repeat left top ;
+        }
+        #bg1 { background-size: auto;}
+        #bg2 { background-size: auto 200px;}
+        #bg3 { background-size: 50% auto;} /*가로 50% 세로오토*/
+        #bg4 { background-size: 100% 100%} /*이미지와 div태그영역이 다르면 화질이깨짐*/
+        #bg5 { background-size: contain} /*비율은 안깨지지만 사진기준으로 칸에 다들어가기때문에 빈공간이 생길수있음 사진이 작아짐*/
+        #bg6 { background-size: cover}/*이미지는 다 나오는데 
+        이미지가 짤릴수 있다, 영역크기에맞춰서 다채움 창을줄이든 늘이든 다참
+        */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="bg1"></div>
+        <div class="box" id="bg2"></div>
+        <div class="box" id="bg3"></div>
+        <div class="box" id="bg4"></div>
+        <div class="box" id="bg5"></div>
+        <div class="box" id="bg6"></div>
+    </div>
+    
+</body>
+</html>

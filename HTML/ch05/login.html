@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<!-- 
+    form action 서식 데이터(form data)를 서버로 보낼 때 해당 데이터가 도착할 URL
+    submit 들어가는거 reset 초기값
+    method 보내는 방식
+    type button이면 폼태그안에서 의미가없고 모양만 나타냄
+    <button>은 내용(값)을 변경하려면 텍스트를 수정해야되고 기본값은 submit
+    name은 서버로보낼때 방식 
+-->
+<body>
+    <form action="/login" method="post">
+        <fieldset>
+            <label>아이디: <input type="text" name="user id"></label>
+            <label>비밀번호: <input type="password" name="user_pw"></label>
+            <input type="submit" value="로그인">
+            <input type="reset" value="초기화">
+        </fieldset>
+    </form>
+
+    <input type="submit" value="서브밋버튼">
+    <input type="button" value="버튼버튼">
+<div>
+    <button type="submit">버튼버튼2</button>
+</div>
+    <label for="user_gender">성별</label>
+ <div>
+    <input type="text" 
+ </div>
+
+</body>
+</html>

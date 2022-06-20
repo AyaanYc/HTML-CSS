@@ -1,0 +1,7 @@
+#signup label { display: inline-block; font-size: 14px; width: 110px; }
+input {line-height: 14px;}
+/* 한글입력할때 창늘어나는것을 방지 */
+ul > li:not(:last-child) {margin-bottom: 5px;}
+/* ul > li 안에 값중에서 마지막껏만 빼고 적용 */
+ul > li:not(:first) {margin-top: 5px;}
+/* ul > li 안에 값중에서 첫번째껏만 빼고 적용 */

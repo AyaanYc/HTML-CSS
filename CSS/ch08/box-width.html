@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {border: solid black; margin-bottom: 10px; padding: 5px;}
+        .box1 {width: 500px; height: 100px;}
+        .box2 {width: 50%; height: 88px; background-color: antiquewhite;}
+    </style>
+</head>
+<!-- 영역(박스)은 항상 부모의크기에따라 변경됨  -->
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

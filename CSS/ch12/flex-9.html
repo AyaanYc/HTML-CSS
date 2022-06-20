@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout{
+            max-width: 600px;/*600보다 작아지면 부모인body를따라가고 600이 넘지느 않는다*/
+            margin: 0 auto;
+            padding: 0;
+        }
+        .flexbox {         
+            display: flex; flex-wrap: nowrap; gap: 10px;
+            padding: 10px; background-color: #6e6c6c;
+        }
+        .item { flex-basis: 100px;  min-height: 150px;}
+        .item:nth-child(odd) { background-color: aqua; flex-grow: 1; }
+        .item:nth-child(even) { background-color: blueviolet }
+        /* flex-shrink 는 줄어드는 비율 
+            기본값은 쉬링크1 숫자가높을수록 더 빨리줄어듬
+            flex-wrap가 nowrap일때만 동작함
+         */
+         /* 
+            lex-basis는 맞출수있는동안은 그 크기를 맞춤         
+         */
+         /* 남는공간에서 비율별로 가져가는속성 flex-grow */
+         /* 
+            gap는  간격크기         
+          */
+          /* 
+          총 가로길이가 600인데 basis로 전체에 100p씩 줘서 여유공간 200이생김 그상태에서 홀수(odd)
+          에만 grow:1을주면 나머지 200px을 홀수상자들이 나눠가짐 
+          */
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="flexbox">
+            <item class="item">content1</item>
+            <item class="item" style="flex-shrink: 0;">content2</item>
+            <item class="item" style="flex-shrink: 20;">content3</item>
+            <item class="item">content4</item>
+        </div>
+    </div>
+</body>
+</html>

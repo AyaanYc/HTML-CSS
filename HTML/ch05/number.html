@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- html에서 넘어오는 값은 전부 문자열이다.
+range 0~100 기본값 50 조정가능
+input type hidden 값만바꾸어 서버에 전송할목적 -->
+<body>
+    <form>
+        <div>
+            <label>나이 <input type="number" name="age" value="100"></label>
+        </div>
+        <div>
+            <label>가격 <input type="range" step="10" name="price" min="0" max="100"></label>
+        </div>
+    </form>
+</body>
+</html>
